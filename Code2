@@ -1,0 +1,20 @@
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.location === window.parent.location) {
+                let alert = document.querySelector('#custom-alert');
+                let colors = ['#DC2626', '#0077B6', '#00A7E1']; // 'D#DH'F 'D*J *1J/ *:JJ1G'
+                let colorIndex = 0;
+
+                setInterval(() => {
+                    alert.style.background = colors[colorIndex];
+                    colorIndex = (colorIndex + 1) % colors.length;
+                }, 2000); // *:JJ1 'DDHF CD 2 +'FJ)
+                setTimeout(() => {
+                    alert.style.display = 'block';
+                }, 5000);
+            }
+        });
+    </script>
+
